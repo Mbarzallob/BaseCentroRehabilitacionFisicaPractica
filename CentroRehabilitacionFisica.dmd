@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CentroRehabilitacionFisica" id="94BD039E-130F-F309-95D6-24B8C36CE0FC" version="3.5">
+<createdBy>MATEO B</createdBy>
+<createdTime>2024-05-09 16:53:28 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>94BD039E-130F-F309-95D6-24B8C36CE0FC</designId>
+</OSDM_Design>
