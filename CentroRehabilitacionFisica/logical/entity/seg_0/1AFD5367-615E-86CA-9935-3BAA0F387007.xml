@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1AFD5367-615E-86CA-9935-3BAA0F387007" name="CRF_EMPLEADOS">
+<createdBy>MATEO B</createdBy>
+<createdTime>2024-05-09 17:28:32 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp_id" id="F6AFD562-EC33-858C-A0CD-C0B7CF18D5A2">
+<createdBy>MATEO B</createdBy>
+<createdTime>2024-05-09 18:48:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo unico de cada uno de los empleados del centro]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Attribute_1" id="9052AAF1-A415-A0D0-B9A3-E22F2435B7EF">
+<createdBy>MATEO B</createdBy>
+<createdTime>2024-05-09 18:48:42 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E68CFF02-B71A-BB96-931C-ED20D34CEE14" name="CRF_EMPLEADOS PK">
+<createdBy>MATEO B</createdBy>
+<createdTime>2024-05-09 18:48:22 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F6AFD562-EC33-858C-A0CD-C0B7CF18D5A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
