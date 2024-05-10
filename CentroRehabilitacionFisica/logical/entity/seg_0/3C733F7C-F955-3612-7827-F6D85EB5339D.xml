@@ -14,4 +14,77 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="se_id" id="A7E00A3A-9EC0-7BAF-F6B5-93B7191E6DB7">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:53:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo unico de cada sesion de terapia]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="se_fecha" id="256587EB-8F5E-9137-C865-90613D84F379">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:53:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha de realizacion de la sesion y hora]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="se_valor" id="9E7057F2-033A-49D1-0B89-24741D6612DE">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:54:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor de cada sesion de terapia]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pla_id" id="A1983869-EF87-359D-2BAB-BA851798504A">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:55:50 UTC</createdTime>
+<generatorID>EFC22917-D625-BC55-5F7C-FDFC0C265FEA</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>EBD46253-529C-F761-063E-CF3581BF7F38</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="455F7008-9896-B9E8-2F5D-7655F16EA9C9" name="CRF_SESIONES_RAHABILITACIONES PK">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:53:38 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A7E00A3A-9EC0-7BAF-F6B5-93B7191E6DB7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

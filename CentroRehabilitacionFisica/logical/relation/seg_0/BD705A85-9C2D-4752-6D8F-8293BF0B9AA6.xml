@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="crf_pa_san_fk" directorySegmentName="seg_0" id="BD705A85-9C2D-4752-6D8F-8293BF0B9AA6">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:09:16 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<sourcePk>80ABD0C2-404B-FB5A-5A23-91B7475F5142</sourcePk>
+<targetPk>FA2B3E15-2813-ABD4-1782-F7AD55660810</targetPk>
+<identifying>false</identifying>
+<nameOnSource>tener</nameOnSource>
+<nameOnTarget>pertenecer</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4FB0E2B2-5A51-ABB7-B6D1-36CA55027D70</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B06D87E6-CDD3-B38B-2F04-AB13EC3576AF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="54EB94A4-46CB-003E-1DFA-D72321A40510" name="CRF_DETALLE_FACTURA">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="det_id" id="3F4B4AE0-595A-49D8-7F8E-051B8EED7EFB">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo unico del detalle de cada factura]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>A77F595D-6752-DDD1-1671-C4FFFF14DC6B</importedID>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="det_cantidad" id="904E2492-CE89-3F6B-64C3-03E9DC99886A">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad de sesiones reservadas por cada paciente]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>DA33A3C2-2ABC-3D4A-5F4F-4728AAFB3CF9</importedID>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="det_precio" id="D1B9A6DA-6EB6-CDD2-9B5C-9A02278A7CE8">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio al que se facturan las sesiones de terapia]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>819A5E0A-ACFB-E1E9-51E9-3DB351CAEAE5</importedID>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="det_subtotal" id="A3B077D7-6D91-27AF-A8B1-E6E9C3F07E95">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Subtotal a pagar de la factura sin IVA (cantidad * precio)]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>A63EA480-9539-2061-C0C8-D3B8356DB171</importedID>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="det_iva" id="B1C19974-21DB-7614-E60A-8601453CD71E">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[IVA de la sesión a la factura]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>B7C7124A-B519-3E8E-18A8-35A303C598CB</importedID>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="det_total" id="C7025B9B-A67B-4E90-F5EE-EE9A8F98D2FA">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio total de la sesión en la factura (subtotal + IVA)]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>B97B99B5-34D9-053E-983D-7DEC1C0F8500</importedID>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cab_id" id="0A276E19-20F7-C256-112C-EDB758CCA3B7">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:10:43 UTC</createdTime>
+<generatorID>7116C901-1E67-D1CA-AF17-623B673E4111</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>2099D6A9-5868-404C-799B-0FA5FEC6C9E4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E12D9894-2905-5744-7910-9CA4B702B93E" name="FS_DETALLE_FACTURA PK">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3F4B4AE0-595A-49D8-7F8E-051B8EED7EFB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

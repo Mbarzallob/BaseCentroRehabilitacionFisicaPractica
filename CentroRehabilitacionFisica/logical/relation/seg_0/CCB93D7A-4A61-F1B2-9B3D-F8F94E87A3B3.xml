@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="crf_pa_eva_fk" directorySegmentName="seg_0" id="CCB93D7A-4A61-F1B2-9B3D-F8F94E87A3B3">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:48:43 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<sourcePk>80ABD0C2-404B-FB5A-5A23-91B7475F5142</sourcePk>
+<targetPk>3823DF25-099C-8000-7AFE-BCA8C356B4C2</targetPk>
+<identifying>false</identifying>
+<nameOnSource>realizarce</nameOnSource>
+<nameOnTarget>hecha</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4FB0E2B2-5A51-ABB7-B6D1-36CA55027D70</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>FEB551E8-850A-095A-CAC2-158AB64C0D72</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

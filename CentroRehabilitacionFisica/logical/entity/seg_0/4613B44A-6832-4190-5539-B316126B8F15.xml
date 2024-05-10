@@ -14,4 +14,141 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pla_id" id="EBD46253-529C-F761-063E-CF3581BF7F38">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:25:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo unico de los planes de rehabilitación]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pla_nombre" id="26BDF89B-E506-FFD4-DFEC-1950E9F48A45">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:25:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especificar a que plan se realizara al paciente:
+-  Rehabilitación ortopédica
+- Rehabilitación Neurológica
+- Rehabilitación pulmonar
+- Rehabilitación cardiaca
+- Rehabilitación pediátrica
+- Rehabilitación geriátrica
+- Rehabilitación deportiva]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pla_can_sesion" id="F9D4A9FF-0377-C4C1-633B-8151BCC4F085">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:28:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especificar la cantidad de sesiones requiere cada plan de rehabilitacion]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pla_objetivo" id="369F602A-2FE0-5A54-F281-31C9817B7A10">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:29:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especificar el objetivo de cada plan de rehabilitacion:
+- Enfoque de cada una de las sesiones
+- Proceso que debe seguir para completar el plan ]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pla_estado" id="B72E6D59-17BF-71AF-E330-BC7284AAE93C">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:37:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especificar el estado en el que se encuentra el plan:
+"A" Abierto: Ell plan que inicia estara en estado abierto
+"C" Cerrado: El plan que finaliza estara en estado cerrado ]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pla_fecha_inicio" id="75BC8E01-8802-01C6-5BD2-0FC25090FB6F">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:52:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha de inicio del plan]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pla_fecha_finalizado" id="19B0573E-A955-87D5-32AD-11C64D94FB1C">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:52:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha de finalizacion del plan del paciente]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fi_id" id="DFCAABCC-B34B-6CF0-C9CB-1157600C86A5">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:49:36 UTC</createdTime>
+<generatorID>5735A0EA-F005-02BF-8C3F-07DF0CBEA9C3</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>E686DC3C-CFF9-A563-7389-465776DA1BAF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BD5BD381-4FEE-7E4F-D4EF-BFC7AD26537D" name="CRF_PLANES_REHABILITACIONES PK">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:25:23 UTC</createdTime>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EBD46253-529C-F761-063E-CF3581BF7F38</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

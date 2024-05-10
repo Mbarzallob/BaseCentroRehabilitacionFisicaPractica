@@ -29,16 +29,21 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Attribute_1" id="9052AAF1-A415-A0D0-B9A3-E22F2435B7EF">
+<Attribute name="emp_tipo" id="9052AAF1-A415-A0D0-B9A3-E22F2435B7EF">
 <createdBy>MATEO B</createdBy>
 <createdTime>2024-05-09 18:48:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especificar que tipo de empleado es:
+"A" si el empleado es administrativo
+"T" si el empleado es terapeuta]]></commentInRDBMS>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

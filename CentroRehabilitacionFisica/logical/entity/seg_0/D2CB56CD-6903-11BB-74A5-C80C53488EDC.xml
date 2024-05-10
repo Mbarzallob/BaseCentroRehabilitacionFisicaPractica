@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4FB0E2B2-5A51-ABB7-B6D1-36CA55027D70" name="CRF_PACIENTES">
-<createdBy>MATEO B</createdBy>
-<createdTime>2024-05-09 18:05:15 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D2CB56CD-6903-11BB-74A5-C80C53488EDC" name="CRF_CABECERA_FACTURA">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
@@ -15,11 +15,12 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="pa_id" id="7DDA55B9-C49D-0335-0619-07968B7E5BF7">
+<Attribute name="cab_id" id="2099D6A9-5868-404C-799B-0FA5FEC6C9E4">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 02:39:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Codigo unico del paciente que ingresa al centro ]]></commentInRDBMS>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo unico de cada factura]]></commentInRDBMS>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>8CF169A8-AE43-1C01-AF5D-DDC378A054E8</importedID>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
@@ -29,11 +30,12 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="pa_fecha_nac" id="393F1E81-3435-755C-A843-818DBFC67B18">
+<Attribute name="cab_fecha" id="34A28B96-DAE4-E173-DEA0-6A57D3E5436F">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 02:40:22 UTC</createdTime>
-<commentInRDBMS><![CDATA[Fecha de nacimiento del paciente que ingresa al centrro de rehabilitación]]></commentInRDBMS>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha de emision de la factura]]></commentInRDBMS>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>4A9DB1FA-BCBB-6F90-B369-F1823342EC50</importedID>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
@@ -42,45 +44,63 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="san_id" id="DB7CE162-BB80-DC40-AF27-DED93973277B">
+<Attribute name="cab_iva" id="F2B52F30-6E2B-CBE5-B0A4-FB17CDB9F63E">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 03:09:57 UTC</createdTime>
-<generatorID>BD705A85-9C2D-4752-6D8F-8293BF0B9AA6</generatorID>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor total del IVA de la factura]]></commentInRDBMS>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>5E71C482-215D-FD54-6D3F-BFD8241D90A8</importedID>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
-<referedAttribute>EFA98567-80DF-4272-315C-A30BC2004624</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="fi_id" id="2956A0BB-1468-9639-EC1F-0E9B25906BAA">
+<Attribute name="cab_subtotal" id="3F3A8E43-E34C-8501-F1CA-B73563D0F0D8">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 03:19:05 UTC</createdTime>
-<generatorID>CD1607BA-8E21-A8AA-0E6F-701C08D781B4</generatorID>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Subtotal a pagar de la facturacion]]></commentInRDBMS>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>232A46A8-6DC0-986B-D8E7-E39B363A6669</importedID>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
-<referedAttribute>E686DC3C-CFF9-A563-7389-465776DA1BAF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="eva_id" id="881B7B74-B75B-11DC-F4D2-34848E1C567A">
+<Attribute name="cab_total" id="A7F964E8-230F-BF8A-5315-E9BB968CF473">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 03:49:19 UTC</createdTime>
-<generatorID>CCB93D7A-4A61-F1B2-9B3D-F8F94E87A3B3</generatorID>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor total a pagar de la factura ]]></commentInRDBMS>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<importedID>A102F8A8-BD35-68B0-EADF-005C89412E49</importedID>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="re_id" id="E7071055-9E17-CB8D-BB20-2C4CBC81A31D">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:51:18 UTC</createdTime>
+<generatorID>CA6426A3-78C9-30EB-AFBA-356E515376D5</generatorID>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
-<referedAttribute>19C3F939-5133-D75A-29B8-B1F1AE469558</referedAttribute>
+<referedAttribute>12EAAE92-0BF2-D387-F7DE-270D35A4F0DD</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -89,16 +109,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="80ABD0C2-404B-FB5A-5A23-91B7475F5142" name="CRF_PACIENTES PK">
+<identifier id="5D1C3A48-D3DA-E90D-5981-EDD6525F3C90" name="FS_CABECERA_FACTURA PK">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 02:40:04 UTC</createdTime>
+<createdTime>2024-05-10 02:36:47 UTC</createdTime>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>7DDA55B9-C49D-0335-0619-07968B7E5BF7</attributeRef>
+<attributeRef>2099D6A9-5868-404C-799B-0FA5FEC6C9E4</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

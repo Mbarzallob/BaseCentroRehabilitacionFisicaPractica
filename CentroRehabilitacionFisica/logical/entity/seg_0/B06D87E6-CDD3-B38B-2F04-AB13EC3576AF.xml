@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B296624-C229-0566-033A-9BB31CBC84CC" name="CRF_RESERVAS">
-<createdBy>MATEO B</createdBy>
-<createdTime>2024-05-09 18:47:13 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B06D87E6-CDD3-B38B-2F04-AB13EC3576AF" name="CRF_TIPOS_SANGRE">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 02:40:39 UTC</createdTime>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
@@ -15,10 +15,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="re_id" id="12EAAE92-0BF2-D387-F7DE-270D35A4F0DD">
+<Attribute name="san_id" id="EFA98567-80DF-4272-315C-A30BC2004624">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 02:54:29 UTC</createdTime>
-<commentInRDBMS><![CDATA[Codigo unico de la reserva realizada]]></commentInRDBMS>
+<createdTime>2024-05-10 02:41:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo unico de los tipos de sangre]]></commentInRDBMS>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
@@ -29,32 +29,37 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="re_pago" id="672C9DC3-61CF-3F0B-B564-10FE700BD7D1">
+<Attribute name="san_tipo" id="5A67C044-46D2-814A-1D56-B2EF3717DA36">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 02:54:52 UTC</createdTime>
-<commentInRDBMS><![CDATA[Especificar la manera de pago de la reservación:
-"EF" efectivo
-"TC" tarjeta de crédito
-"TB" transferencia bancaria]]></commentInRDBMS>
+<createdTime>2024-05-10 02:41:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Especificar que tipo de sangre contiene cada paciente:
+A+
+O+
+B+
+AB+
+A-
+O-
+B-
+AB-]]></commentInRDBMS>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cab_id" id="0A57C001-4330-BB7D-D3BA-962078AF4E7A">
+<Attribute name="pa_id" id="D9008D94-F629-56EC-8C2D-533A6038D594">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 03:51:48 UTC</createdTime>
-<generatorID>CA6426A3-78C9-30EB-AFBA-356E515376D5</generatorID>
+<createdTime>2024-05-10 03:09:16 UTC</createdTime>
+<generatorID>BD705A85-9C2D-4752-6D8F-8293BF0B9AA6</generatorID>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
-<referedAttribute>2099D6A9-5868-404C-799B-0FA5FEC6C9E4</referedAttribute>
+<referedAttribute>7DDA55B9-C49D-0335-0619-07968B7E5BF7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -63,16 +68,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="045A3BDE-0812-9455-8D0B-522A023C5585" name="CRF_RESERVAS PK">
+<identifier id="FA2B3E15-2813-ABD4-1782-F7AD55660810" name="CRF_TIPOS_SANGRE PK">
 <createdBy>casa</createdBy>
-<createdTime>2024-05-10 02:54:40 UTC</createdTime>
+<createdTime>2024-05-10 02:41:13 UTC</createdTime>
 <ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
 <engineerTo>
 <item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>12EAAE92-0BF2-D387-F7DE-270D35A4F0DD</attributeRef>
+<attributeRef>EFA98567-80DF-4272-315C-A30BC2004624</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
