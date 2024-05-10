@@ -61,6 +61,21 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="se_id" id="6CFF3D2C-844B-51DD-4B0F-26E39F410341">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 03:58:41 UTC</createdTime>
+<generatorID>E46F89FF-70B2-AA7C-14A2-A56BB738487D</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>A7E00A3A-9EC0-7BAF-F6B5-93B7191E6DB7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="045A3BDE-0812-9455-8D0B-522A023C5585" name="CRF_RESERVAS PK">
