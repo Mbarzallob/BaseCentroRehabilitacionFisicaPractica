@@ -45,6 +45,21 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="emp_id" id="AEAB4158-5F8E-4DDD-4273-75CA8F8C4DE0">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 04:05:55 UTC</createdTime>
+<generatorID>C3A8FC96-A841-3210-7919-631AC05DF609</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>F6AFD562-EC33-858C-A0CD-C0B7CF18D5A2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="BB322A3E-26A1-8B7C-00EE-7BA9D904EF75" name="CRF_TERAPEUTAS PK">

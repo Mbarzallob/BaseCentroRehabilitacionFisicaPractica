@@ -45,6 +45,21 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="per_id" id="2C1158F8-35F0-E4A4-D1A2-B1EB4283B965">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 04:07:12 UTC</createdTime>
+<generatorID>0172B39D-8AA1-56AB-D44F-B91BCEC52192</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>EB482BFA-DDC3-711B-C57A-D492CA37BF3F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E68CFF02-B71A-BB96-931C-ED20D34CEE14" name="CRF_EMPLEADOS PK">

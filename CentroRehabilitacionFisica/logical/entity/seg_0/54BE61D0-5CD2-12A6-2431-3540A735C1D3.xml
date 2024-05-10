@@ -99,6 +99,36 @@
 <dataTypeSize>13</dataTypeSize>
 <ownDataTypeParameters>13,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="emp_id" id="268547D3-F3E0-768D-C988-00A8A43E9927">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 04:07:45 UTC</createdTime>
+<generatorID>0172B39D-8AA1-56AB-D44F-B91BCEC52192</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>F6AFD562-EC33-858C-A0CD-C0B7CF18D5A2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pa_id" id="1A2D1BC7-B1D4-F9D7-637D-D8F155A3865A">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 04:08:02 UTC</createdTime>
+<generatorID>9CABCA00-EB2B-DA4A-FE73-DF0076871813</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>7DDA55B9-C49D-0335-0619-07968B7E5BF7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="CF8CE0AB-F302-35CF-5579-25ED63A6E8A3" name="CRF_PERSONAS PK">

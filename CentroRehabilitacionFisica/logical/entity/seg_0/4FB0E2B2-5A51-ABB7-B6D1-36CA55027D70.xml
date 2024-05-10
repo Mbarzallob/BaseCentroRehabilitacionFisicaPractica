@@ -87,6 +87,21 @@
 <dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="per_id" id="2CB9ADEB-594E-2AAD-8ECA-EA2831865FE1">
+<createdBy>casa</createdBy>
+<createdTime>2024-05-10 04:07:49 UTC</createdTime>
+<generatorID>9CABCA00-EB2B-DA4A-FE73-DF0076871813</generatorID>
+<ownerDesignName>CentroRehabilitacionFisica</ownerDesignName>
+<engineerTo>
+<item key="AF6E48DA-41F4-7F97-1F76-B344A4D53712" value="true"/>
+</engineerTo>
+<referedAttribute>EB482BFA-DDC3-711B-C57A-D492CA37BF3F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="80ABD0C2-404B-FB5A-5A23-91B7475F5142" name="CRF_PACIENTES PK">
